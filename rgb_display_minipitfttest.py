@@ -9,7 +9,7 @@ dc_pin = digitalio.DigitalInOut(board.D25)
 reset_pin = None
 BAUDRATE = 64000000 # The pi can be very fast! # Create the ST7789 display:
 display = st7789.ST7789(
-board.SPI(), cs=cs_pin, dc=dc_pin, rst=reset_pin, baudrate=BAUDRATE, width=135, height=240, x_offset=53, y_offset=40,
+board.SPI(), cs=cs_pin, dc=dc_pin, rst=reset_pin, baudrate=BAUDRATE, width=240, height=240, x_offset=0, y_offset=0,
 )
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
